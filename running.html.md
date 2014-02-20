@@ -2,7 +2,7 @@
 title: Running
 layout: page
 tags: ['guide', page']
-guideOrder: 3
+guideOrder: 30
 ---
 The server can be started with 
 
