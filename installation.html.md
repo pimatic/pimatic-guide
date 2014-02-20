@@ -19,6 +19,6 @@ Copy the default config file:
 
 You should end up with this in your `pimatic-app` directory:
 
-	condif.json
-	node_modules
-	node_modules/pimatic
+	config.json                <- the config file
+	node_modules               <- directory for the framework and plugins
+	node_modules/pimatic       <- the pimatic framework files
