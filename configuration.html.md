@@ -2,9 +2,9 @@
 title: Configuration
 layout: page
 tags: ['guide', page']
-guideOrder: 1
+guideOrder: 2
 ---
-The `config.json` file is in the [json format](https://en.wikipedia.org/wiki/JSON) and currently includes five 
+The `config.json` file is in the [json format](https://en.wikipedia.org/wiki/JSON) and currently includes four 
 sections:
 
     { 
