@@ -2,7 +2,7 @@
 title: Installation
 layout: page
 tags: ['guide', page']
-pageOrder: 1
+guideOrder: 1
 ---
 First you need to install [node.js](http://nodejs.org) that comes with the package manager 
 [npm](https://npmjs.org/). Then you can run
