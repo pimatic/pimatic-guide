@@ -23,4 +23,9 @@ The framework reads every device config on startup and calls the `createDevice` 
 with the device-config from the devices-Section. If the device class belongs to your plugin then it should create a device
 from the device-config and add it to the framework.
 
-<gist>9143534</git>
+<script src="https://gist.github.com/sweetpi/9143534.js"></script>
+
+###Switch Devices
+
+An full example for an switch device can be found 
+[in the with-switch-device branch](https://github.com/pimatic/pimatic-plugin-template/tree/with-switch-device)
