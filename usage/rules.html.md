@@ -2,7 +2,7 @@
 title: Rules
 layout: guide
 tags: ['guide', page']
-guideOrder: 40
+guideOrder: 1040
 ---
 
 What's a rule
