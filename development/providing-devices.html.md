@@ -27,5 +27,5 @@ from the device-config and add it to the framework.
 
 ###Switch Devices
 
-An full example for an switch device can be found 
-[in the with-switch-device branch](https://github.com/pimatic/pimatic-plugin-template/tree/with-switch-device)
+An full example for an switch device can be found in the 
+[with-switch-device branch](https://github.com/pimatic/pimatic-plugin-template/tree/with-switch-device)
