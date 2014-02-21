@@ -14,7 +14,7 @@ install a Ubuntu.
 * Install Node.js with the package manager of you distro `sudo apt-get install node` 
 * Install CoffeeScript gloabaly with: `sudo npm install -g coffee-script`
 
-###Download pimatic for development
+###Setup pimatic for development
 
     mkdir pimatic-dev
     npm install pimatic --prefix pimatic-dev
@@ -34,7 +34,9 @@ You should end up with this in your `pimatic-dev` directory:
 <tr><td>`node_modules/pimatic`</td>			   <td>the pimatic framework files</td></tr>
 </table>
 
-You should add these options to the `settings` section of your `config.json`:
+###Debug outputs
+
+You should add these options to the `settings` section of your `config.json` to get debug outputs
 
     "debug": true,
     "logLevel": "debug"
