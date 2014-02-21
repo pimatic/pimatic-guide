@@ -26,5 +26,5 @@ In your `pimatic-my-plugin` directory are following files:
 <table class="table file-listing">
 <tr><td>`my-plugin.coffee`</td>	                   <td>This should become the main source file of your Plugin</td></tr>
 <tr><td>`my-plugin-config-schema.coffee`</td>	   <td>Template for config definitions for your plugin</td></tr>
-<tr><td>`package.json`</td>	                       <td>The npm package specification</td></tr>
+<tr><td>`package.json`</td>	                       <td>[npm package specification](https://npmjs.org/doc/json.html)</td></tr>
 </table>
