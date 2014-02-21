@@ -1,6 +1,6 @@
 ---
 title: Configuration
-layout: page
+layout: guide
 tags: ['guide', page']
 guideOrder: 20
 ---

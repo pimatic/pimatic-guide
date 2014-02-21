@@ -1,6 +1,6 @@
 ---
 title: Running
-layout: page
+layout: guide
 tags: ['guide', page']
 guideOrder: 30
 ---

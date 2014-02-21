@@ -1,6 +1,6 @@
 ---
 title: Autostarting
-layout: page
+layout: guide
 tags: ['guide', page']
 guideOrder: 99
 ---

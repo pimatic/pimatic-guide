@@ -1,6 +1,6 @@
 ---
 title: Installation
-layout: page
+layout: guide
 tags: ['guide', page']
 guideOrder: 10
 ---
