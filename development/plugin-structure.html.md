@@ -14,7 +14,7 @@ in your `pimatic-dev` directory.
 
 Your `pimatic-dev` directory should now look like this:
 
-<table class="table">
+<table class="table file-listing">
 <tr><td>`config.json`</td>				       <td>the config file</td></tr>
 <tr><td>`node_modules`</td>				       <td>directory for the framework and plugins</td></tr>
 <tr><td>`node_modules/pimatic`</td>			   <td>the pimatic framework files</td></tr>
@@ -23,7 +23,7 @@ Your `pimatic-dev` directory should now look like this:
 
 In your `pimatic-my-plugin` directory are following files:
 
-<table class="table">
+<table class="table file-listing">
 <tr><td>`my-plugin.coffee`</td>	                   <td>This should become the main source file of your Plugin</td></tr>
 <tr><td>`my-plugin-config-schema.coffee`</td>	   <td>Template for config definitions for your plugin</td></tr>
 <tr><td>`package.json`</td>	                       <td>The npm package specification</td></tr>

@@ -28,6 +28,8 @@ Copy the default config file:
 
 You should end up with this in your `pimatic-dev` directory:
 
-	config.json                <- the config file
-	node_modules               <- directory for the framework and plugins
-	node_modules/pimatic       <- the pimatic framework files
+<table class="table file-listing">
+<tr><td>`config.json`</td>				       <td>the config file</td></tr>
+<tr><td>`node_modules`</td>				       <td>directory for the framework and plugins</td></tr>
+<tr><td>`node_modules/pimatic`</td>			   <td>the pimatic framework files</td></tr>
+</table>
