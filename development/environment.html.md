@@ -33,3 +33,9 @@ You should end up with this in your `pimatic-dev` directory:
 <tr><td>`node_modules`</td>				       <td>directory for the framework and plugins</td></tr>
 <tr><td>`node_modules/pimatic`</td>			   <td>the pimatic framework files</td></tr>
 </table>
+
+You should add these options to the `settings` section of your `config.json`:
+
+    "debug": true,
+    "logLevel": "debug"
+
