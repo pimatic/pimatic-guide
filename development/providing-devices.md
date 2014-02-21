@@ -24,3 +24,8 @@ with the device-config from the devices-Section. If the device class belongs to 
 from the device-config and add it to the framework.
 
 <script src="https://gist.github.com/sweetpi/9143534.js"></script>
+
+###Switch Devices
+
+An full example for an switch device can be found 
+[in the with-switch-device branch](https://github.com/pimatic/pimatic-plugin-template/tree/with-switch-device)
