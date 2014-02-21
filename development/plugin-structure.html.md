@@ -14,20 +14,15 @@ in your `pimatic-dev` directory.
 
 Your `pimatic-dev` directory should now look like this:
 
-	config.json                		<- the config file
-	node_modules               		<- directory for the framework and plugins
-	node_modules/pimatic       		<- the pimatic framework files
-	node_modules/pimatic-my-plugin  <- your plugin in development
-
+<table class="table">
+<tr><td>`config.json`</td><td>the config file</td></tr>
+<tr><td>`node_modules</td><td>directory for the framework and plugins</td></tr>
+<tr><td>`node_modules/pimatic</td><td>the pimatic framework files</td></tr>
+<tr><td>`node_modules/pimatic-my-plugin</td><td>your plugin in development</td></tr>
+</table>
 
 In your `pimatic-my-plugin` directory are following files:
 
-	my-plugin.coffee                   <- This should become the main source file of your Plugin.
-	my-plugin-config-schema.coffee     <- Template for config definitions for your plugin.
-	package.json:                      <- The [npm package specification](https://npmjs.org/doc/json.html).
-
-* Change into your plugin folder `cd pimatic-your-plugin` and edit the `package.json`. Take a look
-  at the [npm package.json documentation](https://npmjs.org/doc/json.html) for infos.
-
-You should end up with this in your 
-
+	my-plugin.coffee                   <- This should become the main source file of your Plugin
+	my-plugin-config-schema.coffee     <- Template for config definitions for your plugin
+	package.json:                      <- The npm package specification
