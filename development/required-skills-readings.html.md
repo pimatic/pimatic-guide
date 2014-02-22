@@ -4,7 +4,6 @@ layout: guide
 tags: ['guide', page']
 guideOrder: 2005
 ---
------------------------
 
  * You should know JavaScript and know how to write JavaScript code.
  * You should know CoffeeScript. If not learn it! It is beatiful and makes things easyer for you. 

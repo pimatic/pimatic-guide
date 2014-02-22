@@ -4,7 +4,6 @@ layout: guide
 tags: ['guide', page']
 guideOrder: 2010
 ---
------------------------
 
 Develop on a Linux box. It makes things easier. You can develop on the Raspberry Pi, but its too 
 slow. If you don't have a Linux running (how can you?) then I suggest to use VirtualBox and 
