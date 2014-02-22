@@ -46,7 +46,7 @@ If an attribute changes an event with the attribute name should be emitted that 
 
 <script src="https://gist.github.com/sweetpi/9157350.js?file=attribute-emit.coffee "></script>
 
-For more attribute examples take a look at the [predefined devices](/docs/lib/devices.html).
+For more attribute examples take a look at the [predefined Devices](/docs/lib/devices.html).
 
 ####Actions
 
@@ -58,7 +58,19 @@ are defined like attributes:
 For eacht Action there should be a function with the same name that executes the action and returns a promise that get fullfiled
 when done.
 
+For more actions examples take a look at the [predefined Devices](/docs/lib/devices.html).
+
+
+####Predefined devices
+
+If you don't want to define an exotic device try to use a [predefined Device](/docs/lib/devices.html) as base class. 
+
 ###Switch Devices
+
+For Switch devices you can use the `PowerSwitch` class as base and you have to define the `changeStateTo` and `getState`
+function.
+
+<script src="https://gist.github.com/sweetpi/9157350.js?file=switch-device.coffee"></script>
 
 An full example for an switch device can be found in the 
 [with-switch-device branch](https://github.com/pimatic/pimatic-plugin-template/tree/with-switch-device)
