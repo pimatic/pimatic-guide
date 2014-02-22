@@ -15,8 +15,7 @@ A device config looks like that:
     { 
       "id": "light",
       "class": "MySwitch",
-      "name": "Kitchen Light",
-      
+      "name": "Kitchen Light"
     }
 
 The framework reads every device config on startup and calls the `createDevice` function, if existing, on your plugin
