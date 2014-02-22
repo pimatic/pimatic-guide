@@ -5,6 +5,8 @@ tags: ['guide', page']
 guideOrder: 2005
 ---
 
+###Required Skills
+
 *  You should know JavaScript and know how to write JavaScript code. 
 *  You should know CoffeeScript. If not learn it! It is beatiful and makes things easyer for you. 
    Just read the [CoffeeScript introduction page](http://coffeescript.org/)
