@@ -60,6 +60,12 @@ when done.
 
 For more actions examples take a look at the [predefined Devices](/docs/lib/devices.html).
 
+<script src="https://gist.github.com/sweetpi/9157350.js?file=device-constructor.coffee"></script>
+
+####Constructor
+
+Your constructor function must assign a name and id to the device (typical from the device config).
+
 
 ####Predefined devices
 
