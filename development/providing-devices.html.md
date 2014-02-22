@@ -40,8 +40,13 @@ Attributes are defined by adding defining the `attributes` property of the `Devi
 <script src="https://gist.github.com/sweetpi/9157350.js?file=attributes.coffee"></script>
 
 Each attribute must have a getter function that returns a Promise fullfiled with the current attribute value. The getter must
-be named like the attribute prefixed with `get` and Uppercase first letter of the attribute name. For more attribute examples
-take a look at the [predefined devices](/docs/lib/devices.html).
+be named like the attribute prefixed with `get` and Uppercase first letter of the attribute name. 
+
+If an attribute changes an event with the attribute name should be emitted that contains the new value:
+
+<script src="https://gist.github.com/sweetpi/9157350.js?file=attribute-emit.coffee "></script>
+
+For more attribute examples take a look at the [predefined devices](/docs/lib/devices.html).
 
 ####Actions
 
