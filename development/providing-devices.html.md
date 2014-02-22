@@ -65,7 +65,7 @@ For more actions examples take a look at the [predefined Devices](/docs/lib/devi
 
 If you don't want to define an exotic device try to use a [predefined Device](/docs/lib/devices.html) as base class. 
 
-###Switch Devices
+###Switch Device
 
 For Switch devices you can use the `PowerSwitch` class as base and you have to define the `changeStateTo` and `getState`
 function.
@@ -74,3 +74,11 @@ function.
 
 An full example for an switch device can be found in the 
 [with-switch-device branch](https://github.com/pimatic/pimatic-plugin-template/tree/with-switch-device)
+
+
+###Temperature Sensor
+
+A Temperature ensor can use the `TemperatureSensor` class as base. You must define a `getTemperature` function and emit the
+"temperature" attribute event, if a new value was readed.
+
+<script src="https://gist.github.com/sweetpi/9157350.js?file=temperature-sensor.coffee"></script>
