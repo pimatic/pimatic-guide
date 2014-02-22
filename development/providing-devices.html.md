@@ -23,7 +23,25 @@ The framework reads every device config on startup and calls the `createDevice` 
 with the device-config from the devices-Section. If the device class belongs to your plugin then it should create a device
 from the device-config and add it to the framework.
 
-<script src="https://gist.github.com/sweetpi/9143534.js"></script>
+<script src="https://gist.github.com/sweetpi/9157350.js?file=providing-devices.coffee"></script>
+
+###Device-class
+
+Any device must be subclass of the device class. A device has Attributes and Actions
+
+####Attributes
+
+Attributes are properties of the device like the state of a switch or sensor values like temperature. For 
+Sensor-Devices these are displayed at the frontend as values. For other devices the display type depends on the device type.
+For example the state of a switch is displayed as an switch button.
+
+Attributes are defined by adding defining the `attributes` property of the `Device` class:
+
+<script src="https://gist.github.com/sweetpi/9157350.js?file=attributes.coffee"></script>
+
+
+
+
 
 ###Switch Devices
 
