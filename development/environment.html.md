@@ -41,3 +41,29 @@ You should add these options to the `settings` section of your `config.json` to 
     "debug": true,
     "logLevel": "debug"
 
+Editor / IDE Setup
+------------------
+Coffescript is whitespace sensitiv so be sure to use the following editor settings:
+
+* tab size: 2
+* translate tabs to spaces: true
+* max line length: 100
+
+I'm using [sublime text](http://www.sublimetext.com/) as a editor. A example project config would be:
+
+    {
+      "folders":
+      [
+        {
+          "path": "."
+        }
+      ],
+      "settings":
+      {
+        "tab_size": 2,
+        "translate_tabs_to_spaces": true,
+        "rulers": [100]
+      }
+    }
+
+If you use sublime then install [BetterCoffee](https://github.com/aponxi/sublime-better-coffeescript).
