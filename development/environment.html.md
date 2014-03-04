@@ -5,13 +5,15 @@ tags: ['guide', page']
 guideOrder: 2010
 ---
 
-Develop on a Linux box. It makes things easier. You can develop on the Raspberry Pi, but its too 
-slow. If you don't have a Linux running (how can you?) then I suggest to use VirtualBox and 
+Develop on a Linux box or a Mac. It makes things easier. You can develop on the Raspberry Pi, but its too 
+slow. If you don't have a Linux or Mac running (how can you?) then I suggest to use VirtualBox and 
 install a Ubuntu.
 
-###Instal node.js and CoffeeScript
-* Install Node.js with the package manager of you distro `sudo apt-get install node` 
-* Install CoffeeScript gloabaly with: `sudo npm install -g coffee-script`
+###Instal Node.js
+
+You need to install Node.js version above __0.10.0__. I recommand installing 
+[Node.js via the package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) of 
+your linux distribution. 
 
 ###Setup pimatic for development
 
