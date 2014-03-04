@@ -4,11 +4,31 @@ layout: guide
 tags: ['guide', page']
 guideOrder: 10
 ---
+
+## Node.js Installation
+
 First you need to install [node.js](http://nodejs.org) that comes with the package manager 
-[npm](https://npmjs.org/). Then you can run
+[npm](https://npmjs.org/). 
+
+You need to install node.js version above __0.10.0__. If you are on the Raspberry Pi and running the 
+standard Raspbian distribution you can use this:
+
+    wget http://nodejs.org/dist/v0.10.24/node-v0.10.24-linux-arm-pi.tar.gz -P /tmp
+    cd /usr/local
+    sudo tar xzvf /tmp/node-v0.10.24-linux-arm-pi.tar.gz --strip=1
+
+For other Raspberry Pi releases can be found [here](https://gist.github.com/adammw/3245130/).
+
+Check you node.js version with: 
+
+    /usr/bin/env node --version
+
+##pimatic Installation
+
+When node.js and npm are installed then you can run
 
     mkdir pimatic-app
-    npm install pimatic --prefix pimatic-app
+    npm install pimatic --prefix pimatic-app --production
 
 to install the pimatic framework.
 

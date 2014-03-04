@@ -10,7 +10,7 @@ The server can be started with
 
 To daemonize pimatic you can run:
 
-        sudo node_modules/pimatic/pimatic.js start
+    sudo node_modules/pimatic/pimatic.js start
 
 You can also use `status`, `stop`, `restart`.
 
