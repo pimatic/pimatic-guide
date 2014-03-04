@@ -10,7 +10,7 @@ guideOrder: 10
 First you need to install [node.js](http://nodejs.org) that comes with the package manager 
 [npm](https://npmjs.org/). 
 
-You need to install node.js version above __0.10.0__. If you are on the Raspberry Pi and running the 
+You need to install Node.js version above __0.10.0__. If you are on the Raspberry Pi and running the 
 standard Raspbian distribution you can use this:
 
     wget http://nodejs.org/dist/v0.10.24/node-v0.10.24-linux-arm-pi.tar.gz -P /tmp
@@ -19,7 +19,7 @@ standard Raspbian distribution you can use this:
 
 For other Raspberry Pi releases can be found [here](https://gist.github.com/adammw/3245130/).
 
-Check you node.js version with: 
+Check you Node.js version with: 
 
     /usr/bin/env node --version
 
