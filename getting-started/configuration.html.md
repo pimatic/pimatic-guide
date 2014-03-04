@@ -31,7 +31,7 @@ In the _plugins_ section you have to list all plugins to load in the form of
     }
 
 where _plugin-name_ ist the name and directory of the plugin you want to load. All plugins are 
-installed in the _node_modules_ directory and prefixed with `pimatic-`. 
+installed in the `node_modules` directory and prefixed with `pimatic-`. 
 
 
 ### The _devices_ section
