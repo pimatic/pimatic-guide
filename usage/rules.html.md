@@ -180,6 +180,10 @@ __Examples:__
   
   * set $tempsetting to $tempsetting + 0.5
 
+### shell-execute-Plugin
+ 
+  * execute "_shell-command_"
+
 ### mail-Plugin
 
   * send mail to: "_address_" subject:"_subject_" text:"_text_"
