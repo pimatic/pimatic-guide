@@ -32,6 +32,8 @@ Predicates
 
 ###Built in
 
+##Switches
+
 Predicate for devices that have a state like switches
 
   * _device_ is on|off
@@ -43,6 +45,8 @@ __Examples:__
   * tv is on
   * light is off
 
+##Presence sensors
+
 Predicates for presence sensors like a motion detector  
 
   * _device_ is present
@@ -52,6 +56,22 @@ Predicates for presence sensors like a motion detector
 __Examples:__
 
   * my smartphone is present
+
+##Contact sensors
+
+  * _device_ is opened
+  * _device_ is closed
+
+##Variables
+
+  * _expression [==|<|>|<=|>=] _expression_
+
+__Examples:__
+
+  * $tempsetting < 42
+  * $device.attribute >= $someVar + 10
+
+## General Deivce attributes
 
 Predicates for comparing device attributes like sensor value or other states.
 
@@ -73,8 +93,8 @@ __Examples:__
 Provided by the [cron-plugin](http://www.pimatic.org/docs/pimatic-cron/)
 
   * its _time_
-  * its _weekday_ _time_
-  * its _weekday_
+  * its _day_ _time_
+  * its _day_
 
 __Examples:__
 
@@ -96,21 +116,65 @@ Actions
 
 ###Built in
 
-Predicate for devices that can be turned on or off:
+##Switches
+
+Actions for devices that can be turned on or off:
 
   * switch [the] _device_ on|off
   * turn [the] _device_ on|off
   * switch on|off [the] _device_ 
   * turn on|off [the] _device_ 
 
+These actions support a _for_-Suffix to switch the device back to the state before after
+a certain time.
+
 __Examples:__
 
   * turn tv on
   * switch the light off
+  * switch the light on for 5 minutes
 
-__Logger:__
+##Dimmer
+
+Actions dimmer devices. 
+
+  * dim [the] _device_ to _value_[%]
+
+__Examples:__
+
+  * dim couch-light to 30%
+
+##Shutter/screens
+
+Actions for shutter/screen devices:
+
+  * lower [the] _device_ [down]
+  * raise [the] _device_ [up]
+  * move [the] _device_ up|down
+  * stop [the] _device_
+
+These actions support a _for_-Suffix to stop the shutter/screen from moving after
+a certain time.
+
+__Examples:__
+  
+  * raise kitchen-screen 
+  * lower kitchen-screen 
+  * lower kitchen-screen for 5 seconds
+  * stop kitchen-screen 
+
+##Logger
 
   * log "_a string_"
+
+##Variables
+
+  * set $_varname_ to _expression_
+
+__Examples:__
+  
+  * set $tempsetting to $tempsetting + 0.5
+
 
 Development
 ------------
