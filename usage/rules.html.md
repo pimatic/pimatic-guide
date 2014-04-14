@@ -88,7 +88,7 @@ __Examples:__
   * temperature of temperature sensor 1 is lower than 15°C
   * humidity of temperature sensor 1 is greater than 60% 
 
-###chron-plugin
+###chron-Plugin
 
 Provided by the [cron-plugin](http://www.pimatic.org/docs/pimatic-cron/)
 
@@ -102,7 +102,7 @@ __Examples:__
   * its 8:00
   * its friday 10pm
 
-###mobile-frontend
+###mobile-frontend-Plugin
 
   * _button text_ is pressed
   * button _button text_ is pressed
@@ -110,6 +110,11 @@ __Examples:__
 __Examples:__
 
   * watch tv button is pressed
+
+###sunrise-Plugin
+
+  * its sunrise
+  * its sunset
 
 Actions
 -------
@@ -174,6 +179,14 @@ __Examples:__
 __Examples:__
   
   * set $tempsetting to $tempsetting + 0.5
+
+### mail-Plugin
+
+  * send mail to: "_address_" subject:"_subject_" text:"_text_"
+
+### pushover-Plugin
+
+  * push title:"_title_" message:"_message_" priority:1
 
 
 Development
