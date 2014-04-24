@@ -113,8 +113,21 @@ __Examples:__
 
 ###sunrise-Plugin
 
-  * its sunrise
+  * its _suntime_
+  * its _suntime_
+  * its _time period_ before|after _suntime_
+  * its before|after _suntime_
+
+where _suntime_ is "sunrise", "sunset" or any other [supported suntime event](http://www.pimatic.org/docs/pimatic-sunrise/).
+
+__Examples:__
+
+  * its sunsrise
   * its sunset
+  * its before sunrise
+  * its after sunset
+  * its 30 minutes after sunrise
+  * its 2h before sunset
 
 Actions
 -------
