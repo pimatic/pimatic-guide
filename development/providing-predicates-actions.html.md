@@ -12,7 +12,7 @@ There are some common build in Provider in the framework. So in most cases these
 by plugins. But if you need a special provider for a plugin specific action you can implement your own.
 
 <div class="alert alert-warning">
-	Please note, that these API's aren't fix yet and may change in the future, without a notice.
+	Please note that these API's aren't fix yet and may change in the future without a notice.
 </div>
 
 ###ActionProvider
