@@ -46,10 +46,8 @@ See the [API-Docs](/api/actions) for a list of all available functions.
 
 ## websocket-API
 
-The websocket-API is the second method to interact with pimatic. The Advantage over the REST-API is
-that you get live events, if something in pimatic changes. On top of websockets pimatic
-is using the [socket.io Protocol](https://github.com/Automattic/socket.io-protocol) to send and 
-receive messages.
+The websocket-API is the second method to interact with pimatic. The Advantage over the REST-API is that you get live events, if something in pimatic changes. On top of websockets pimatic
+is using the [socket.io Protocol](https://github.com/Automattic/socket.io-protocol) to send and  receive messages.
 
 A simple axample:
 
