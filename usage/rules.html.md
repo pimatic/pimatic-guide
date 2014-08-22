@@ -88,6 +88,16 @@ __Examples:__
   * temperature of temperature sensor 1 is lower than 15°C
   * humidity of temperature sensor 1 is greater than 60% 
 
+## Device attribute watchdog
+  
+  Becomes true if an attribute was not update for a certain time.
+
+  * _attribute_ of _device_ was not updated for _time_
+
+__Examples:__
+
+  * temperature of temperature sensor 1 was not updated for 5 minutes
+
 ###chron-Plugin
 
 Provided by the [cron-plugin](http://www.pimatic.org/docs/pimatic-cron/)
