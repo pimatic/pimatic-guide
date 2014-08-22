@@ -5,7 +5,7 @@ tags: ['guide', page']
 guideOrder: 1050
 ---
 
-How to make creative use of the features of pimatic and its plugin.
+### How to make creative use of the features of pimatic and its plugin.
 
 Using a Up/Down arrow device to lower or increase a value
 First, implement a Screen or Shutter device in pimatic. This can be done by adding a Screen device pin Pilight (use a fake address). Now that we have Up and Down buttons, make a variable and some rules for it to use them.
@@ -38,12 +38,16 @@ THEN turn heat on
 
 Offcourse, don't use the $WarmsUp in your rule to turn it off, because it will allways be heating up when the Central Heating is on ;)
 
-How to work with various timesets to change the desired temperature for heating
+### How to work with various timesets to change the desired temperature for heating.
+
+
 When I started with Pimatic, I created a different rule for every time window to stop and start heating based on temperatures. Since the feature of variabels in Pimatic I have changed this way of regulating temperature.
 Let me explain the way I control my Central Heating ..
-First, create the following variable: $DesiredTemp
-After that, create some normal on/off switches: RunProgram & TodaySunday
-Now, create a set of rules for every time window you have. I will give a few of mine:
+  
+  * First, create the following variable: $DesiredTemp
+  * After that, create some normal on/off switches: RunProgram & TodaySunday
+  * Now, create a set of rules for every time window you have. I will give a few of mine:
+
 
   IF it is before 06:00 and pilight-thermostaat-runprogram is on
   THEN $DesiredTemp = 18
@@ -64,7 +68,7 @@ To turn off:
   IF $pilight-thermostaat-woonkamerwireless.temperature > ($TemperatuurInstelling+ $ThermostaatMarge) and warmte is turned on
   THEN turn heat off
 
-As you may notice, a also use a variable called $ThermostaatMarge this is a variable that contains the value of 0.2 and is used to prevent togglig the on and off to much
+As you may notice, a also use a variable called $ThermostaatMarge this is a variable that contains the value of 0.2 and is used to prevent togglig the on and off to much.
 
 In all my Central Heating rules I make use of a $BlockHeat variable. Whenever this value is 1 or higher, Central Heating s cut off immediately. Turning on is only allowed when it is 0 for at least 5 minutes.
 When it is spring, and you open the door to the garden for fresh air you living room meet getting colder then desired (according to the rules). Therefor I set $Blockheat to +1 the moment it detects opening the door. It is was allready heating, it is turned down. When the door is closed again, it needs to be closed for 5 minutes before heating is allowed. If it is still to cold, but the temperature is still rising (see earlier example) it still will not turn on heating.
