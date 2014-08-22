@@ -33,7 +33,7 @@ This yields:
       "success": true
     }
 
-You can also create (using 'POST') or update (using 'Patch') the value of a variable:
+You can also create (using 'POST') or update (using 'PATCH') the value of a variable:
 
     curl \
       -X PATCH \
