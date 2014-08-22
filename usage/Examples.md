@@ -33,8 +33,9 @@ Now create the following rules:
 
 Now edit your rule responsible for turning the central heating on:
 
-IF $pilight-thermostaat-woonkamerwireless.temperature < ($TemperatuurInstelling - $ThermostaatMarge) and heat is turned off and $WarmsUp = 0 and $BlockHeat = 0 for 5 minutes
-THEN turn heat on
+    IF $pilight-thermostaat-woonkamerwireless.temperature < ($TemperatuurInstelling - $ThermostaatMarge) 
+       and heat is turned off and $WarmsUp = 0 and $BlockHeat = 0 for 5 minutes
+    THEN turn heat on
 
 Offcourse, don't use the $WarmsUp in your rule to turn it off, because it will allways be heating up when the Central Heating is on ;)
 
@@ -48,25 +49,28 @@ Let me explain the way I control my Central Heating ..
   * After that, create some normal on/off switches: RunProgram & TodaySunday
   * Now, create a set of rules for every time window you have. I will give a few of mine:
 
+Rules:
 
-  IF it is before 06:00 and pilight-thermostaat-runprogram is on
-  THEN $DesiredTemp = 18
+    IF it is before 06:00 and pilight-thermostaat-runprogram is on
+    THEN $DesiredTemp = 18
 
-  IF it is after 06:00 and before 07:30 and pilight-thermostaat-runprogram is on
-  THEN $DesiredTemp = 18
+    IF it is after 06:00 and before 07:30 and pilight-thermostaat-runprogram is on
+    THEN $DesiredTemp = 18
 
-  IF  it is monday or tuesday or thursday or friday and it is after 07:30 and before 14:00 and pilight-thermostaat-runprogram is on and pilight-thermostaat-sunday is off
-  THEN $DesiredTemp = 18
+    IF  it is monday or tuesday or thursday or friday and it is after 07:30 and before 14:00 
+        and pilight-thermostaat-runprogram is on and pilight-thermostaat-sunday is off
+    THEN $DesiredTemp = 18
 
-  IF it is wednesday or saturday or sunday or pilight-thermostaat-sunday is turned on and it is after 07:30 and before 22:00 and pilight-thermostaat-runprogram is on
-  THEN $DesiredTemp = 20
+    IF it is wednesday or saturday or sunday or pilight-thermostaat-sunday is turned on 
+       and it is after 07:30 and before 22:00 and pilight-thermostaat-runprogram is on
+    THEN $DesiredTemp = 20
 
 Now you have some rules that will change the desired temperature to the temperature that fits the normal daily situation.
 When you use the rule to turn on Central HEating from the previous exmaple, it will automaticly turn on the heating when needed.
 To turn off:
 
-  IF $pilight-thermostaat-woonkamerwireless.temperature > ($TemperatuurInstelling+ $ThermostaatMarge) and warmte is turned on
-  THEN turn heat off
+    IF $pilight-thermostaat-woonkamerwireless.temperature > ($TemperatuurInstelling+ $ThermostaatMarge) and warmte is turned on
+    THEN turn heat off
 
 As you may notice, a also use a variable called $ThermostaatMarge this is a variable that contains the value of 0.2 and is used to prevent togglig the on and off to much.
 
