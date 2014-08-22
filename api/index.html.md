@@ -2,7 +2,7 @@
 title: API
 layout: guide
 tags: ['guide', page']
-guideOrder: 3000
+guideOrder: 1500
 ---
 
 Pimatic features a rich API for external scripting or frontends. The API can be accessed in two
