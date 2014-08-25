@@ -18,9 +18,11 @@ A device config looks like that:
       "name": "Kitchen Light"
     }
 
-The framework reads every device config on startup and calls the `createDevice` function, if existing, on your plugin
-with the device-config from the devices-Section. If the device class belongs to your plugin then it should create a device
-from the device-config and add it to the framework.
+You must first register your new Device by calling the `registerDeviceClass` function of the `deviceManager`. 
+
+The framework reads every device config on startup and calls the provided `createCallback` function for all registered device 
+of the registered class. The callback gets the device-config from the config file and should construct and return
+the instance of the device:
 
 <script src="https://gist.github.com/sweetpi/9157350.js?file=providing-devices.coffee"></script>
 
