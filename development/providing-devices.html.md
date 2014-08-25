@@ -18,9 +18,8 @@ A device config looks like that:
       "name": "Kitchen Light"
     }
 
-You must first register your new Device by calling the `registerDeviceClass` function of the `deviceManager`. 
-
-The framework reads every device config on startup and calls the provided `createCallback` function for all registered device 
+You must first register your new Device by calling the `registerDeviceClass` function of the `deviceManager`. The framework reads 
+every device config on startup and calls the provided `createCallback` function for all registered device 
 of the registered class. The callback gets the device-config from the config file and should construct and return
 the instance of the device:
 
