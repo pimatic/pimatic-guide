@@ -25,6 +25,10 @@ Check you Node.js version with:
 
 ##pimatic Installation
 
+You must have the `gcc` compiler or some other suitable compiler installed. On debian based systems run:
+
+    sudo apt-get install build-essential
+
 When node.js and npm are installed then you can run
 
     mkdir pimatic-app
