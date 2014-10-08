@@ -2,7 +2,7 @@
 title: Autostarting
 layout: guide
 tags: ['guide', page']
-guideOrder: 99
+guideOrder: 77
 ---
 You can autostart pimatic by additional installing the init.d script:
 
