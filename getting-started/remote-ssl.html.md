@@ -12,8 +12,8 @@ You can configurate pimatic to run just the http- or https-Server or both. By de
 
 To connect from the internet to your Raspberry Pi, you need first to setup two things:
 
-1) A [Dynamic DNS](http://en.wikipedia.org/wiki/Dynamic_DNS) for your home internet ip. So it can be accessed independent of the assigned IP-Address from you internet service provider. Most routers have a option for this, so check the user manual of your router.
-2) Configuarete your router to [forward the port](http://en.wikipedia.org/wiki/Port_forwarding) of the https-Server (default 43) to the local IP-Address of your  Raspberry Pi. Check again the user manual of your router.
+1. A [Dynamic DNS](http://en.wikipedia.org/wiki/Dynamic_DNS) for your home internet ip. So it can be accessed independent of the assigned IP-Address from you internet service provider. Most routers have a option for this, so check the user manual of your router.
+2. Configuarete your router to [forward the port](http://en.wikipedia.org/wiki/Port_forwarding) of the https-Server (default 43) to the local IP-Address of your  Raspberry Pi. Check again the user manual of your router.
 
 ### Creating a SSL-Certificate
 
