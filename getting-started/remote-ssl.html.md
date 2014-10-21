@@ -21,9 +21,11 @@ To use the https-Server properly you need to create a self-signed certificate. T
 Luckily we have written a script to simplify this:
 
 ```
-sudo apt-get install curl
+sudo apt-get install wget
 cd pimatic-app
-curl -s https://raw.githubusercontent.com/pimatic/pimatic/master/install/ssl-setup | sudo bash /dev/stdin
+wget https://raw.githubusercontent.com/pimatic/pimatic/master/install/ssl-setup
+chmod +x ./ssl-setup
+./ssl-setup
 ```
 
 You have to give some informations including your dynamic DNS address. At the end it creates 3 files: 
