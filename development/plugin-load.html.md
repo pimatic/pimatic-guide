@@ -1,5 +1,5 @@
 ---
-title: Load you Plugin
+title: Load your Plugin
 layout: guide
 tags: ['guide', page']
 guideOrder: 2040
