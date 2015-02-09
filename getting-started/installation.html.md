@@ -31,6 +31,7 @@ You must have the `gcc` compiler or some other suitable compiler installed. On D
 
 Once node.js and npm are installed you can run
 
+    cd /home/pi
     mkdir pimatic-app
     npm install pimatic --prefix pimatic-app --production
 
