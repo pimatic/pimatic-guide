@@ -20,11 +20,11 @@ You can create your own frontend item templates for your devices. First add a `g
 
 <script src="https://gist.github.com/sweetpi/9157350.js?file=template.coffee"></script>
 
-Then you need to define the HTML-template with the a corresponding id in an extra added HTML/Jade file:
+Then you need to define the HTML-template with the corresponding ID in an extra added HTML/Jade file:
 
 <script src="https://gist.github.com/sweetpi/901c222517bd627a50b3.js?file=item-template.html"></script>
 
-and define the behavior by adding a item class in an extra added JS/CS file;
+and define the behavior by adding an item class in an extra added JS/CS file;
 
 <script src="https://gist.github.com/sweetpi/901c222517bd627a50b3.js?file=item-class.coffee"></script>
 
