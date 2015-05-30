@@ -46,39 +46,61 @@ See the [API-Docs](/api/actions) for a list of all available functions.
 
 ## websocket-API
 
-The websocket-API is the second method to interact with pimatic. The Advantage over the REST-API is that you get live events, if something in pimatic changes. On top of websockets pimatic
-is using the [socket.io Protocol](https://github.com/Automattic/socket.io-protocol) to send and  receive messages.
+The websocket-API is the second method to interact with pimatic. The Advantage over the REST-API
+is that you get live events, if something in pimatic changes. On top of websockets pimatic is
+using the [socket.io Protocol](https://github.com/Automattic/socket.io-protocol) to send and 
+receive messages.
 
-A simple axample:
+A simple example:
 
-    var socket = io('http://your-pimatic/');
-    io.on('connection', function(socket){
+    var io = require('socket.io-client');
+
+    var host = 'your-pimatic';
+    var port = 80;
+    var u = encodeURIComponent('your-username');
+    var p = encodeURIComponent('your-password');
+    var socket = io('http://' + host + ':' + port + '/?username=' + u + '&password=' + p, {
+      reconnection: true,
+      reconnectionDelay: 1000,
+      reconnectionDelayMax: 3000,
+      timeout: 20000,
+      forceNew: true
+    });
+
+    socket.on('connect', function() {
       console.log('connected');
-      
-      socket.socket.on('devices', function(devices){
-        console.log(devices);
-      });
+    });
 
-      socket.on('rules', function(rules){
-        console.log(rules); 
-      });
+    socket.on('event', function(data) {
+      console.log(data);
+    });
 
-      socket.on('variables', function(variables){
-        console.log(variables); 
-      });
+    socket.on('disconnect', function(data) {
+      console.log('disconnected');
+    });
 
-      socket.on('pages', function(pages){
-        console.log(pages); 
-      });
+    socket.on('devices', function(devices){
+      console.log(devices);
+    });
 
-      socket.on('groups', function(groups){
-       console.log(groups); 
-      });
+    socket.on('rules', function(rules){
+      console.log(rules); 
+    });
 
-      socket.on("deviceAttributeChanged", (attrEvent) -> 
-        console.log(attrEvent);
-      });
+    socket.on('variables', function(variables){
+      console.log(variables); 
+    });
 
+    socket.on('pages', function(pages){
+      console.log(pages); 
+    });
+
+    socket.on('groups', function(groups){
+      console.log(groups); 
+    });
+
+    socket.on('deviceAttributeChanged', function(attrEvent) {
+      console.log(attrEvent);
     });
 
 You can also call actions from the socket.io connection:
