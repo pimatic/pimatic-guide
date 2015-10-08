@@ -15,7 +15,7 @@ __Examples:__
   * if its 10pm then turn the tv off
   * if its friday and its 8am then turn the light on
   * if (music is playing or the light is on) and somebody is present then turn the speaker on
-  * if temperatue of living room is less than 15°C for 5 minutes then log "its getting cold" 
+  * if temperature of living room is less than 15°C for 5 minutes then log "its getting cold" 
 
 The condition of a rule consists of one or more predicates. The predicates can be combined with
 "and", "or" and can be grouped by parentheses.
@@ -30,9 +30,9 @@ can't have a for-suffix because the condition can never hold.
 Predicates
 -----------
 
-###Built in
+### Built in
 
-##Switches
+## Switches
 
 Predicate for devices that have a state like switches
 
@@ -45,7 +45,7 @@ __Examples:__
   * tv is on
   * light is off
 
-##Presence sensors
+## Presence sensors
 
 Predicates for presence sensors like a motion detector  
 
@@ -57,12 +57,12 @@ __Examples:__
 
   * my smartphone is present
 
-##Contact sensors
+## Contact sensors
 
   * _device_ is opened
   * _device_ is closed
 
-##Variables
+## Variables
 
   * _expression [==|<|>|<=|>=] _expression_
 
@@ -71,7 +71,7 @@ __Examples:__
   * $tempsetting < 42
   * $device.attribute >= $someVar + 10
 
-## General Deivce attributes
+## General Device attributes
 
 Predicates for comparing device attributes like sensor value or other states.
 
@@ -98,7 +98,7 @@ __Examples:__
 
   * temperature of temperature sensor 1 was not updated for 5 minutes
 
-###chron-Plugin
+### chron-Plugin
 
 Provided by the [cron-plugin](http://www.pimatic.org/docs/pimatic-cron/)
 
@@ -112,7 +112,7 @@ __Examples:__
   * its 8:00
   * its friday 10pm
 
-###mobile-frontend-Plugin
+### mobile-frontend-Plugin
 
   * _button text_ is pressed
   * button _button text_ is pressed
@@ -121,7 +121,7 @@ __Examples:__
 
   * watch tv button is pressed
 
-###sunrise-Plugin
+### sunrise-Plugin
 
   * its _suntime_
   * its _suntime_
@@ -132,7 +132,7 @@ where _suntime_ is "sunrise", "sunset" or any other [supported suntime event](ht
 
 __Examples:__
 
-  * its sunsrise
+  * its sunrise
   * its sunset
   * its before sunrise
   * its after sunset
@@ -142,9 +142,9 @@ __Examples:__
 Actions
 -------
 
-###Built in
+### Built in
 
-##Switches
+## Switches
 
 Actions for devices that can be turned on or off:
 
@@ -162,7 +162,7 @@ __Examples:__
   * switch the light off
   * switch the light on for 5 minutes
 
-##Dimmer
+## Dimmer
 
 Actions dimmer devices. 
 
@@ -172,7 +172,7 @@ __Examples:__
 
   * dim couch-light to 30%
 
-##Shutter/screens
+## Shutter/screens
 
 Actions for shutter/screen devices:
 
@@ -191,11 +191,11 @@ __Examples:__
   * lower kitchen-screen for 5 seconds
   * stop kitchen-screen 
 
-##Logger
+## Logger
 
   * log "_a string_"
 
-##Variables
+## Variables
 
   * set $_varname_ to _expression_
 

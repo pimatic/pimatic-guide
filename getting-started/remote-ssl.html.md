@@ -6,7 +6,7 @@ guideOrder: 80
 ---
 
 If you want to use pimatic over the internet you should always use a SSL-Connection (https) for security reasons.
-You can configurate pimatic to run just the http- or https-Server or both. By default only the (insecure) http server is enabled.
+You can configure pimatic to run just the http- or https-Server or both. By default only the (insecure) http server is enabled.
 
 ### Preparation
 
@@ -36,7 +36,7 @@ You have to give some information including your dynamic DNS address. At the end
 
 ### Configuration
 
-Edit or add the `https`-Confiuration options in the `settings`-Section of your `config.json`. It should look like this:
+Edit or add the `https`-Configuration options in the `settings`-Section of your `config.json`. It should look like this:
 
 ```
 "httpsServer": {
@@ -49,4 +49,4 @@ Edit or add the `https`-Confiuration options in the `settings`-Section of your `
 },
 ```
 
-The last step is to import the authority certificate to all your devices by going to: `http://your-ddns/root-ca-cert.crt` on each device and accepting the import. If you don't do this, you will get SSL-warnings when accesssing pimatic and experience issues with caching (see: [#282](https://github.com/pimatic/pimatic/issues/282)).
+The last step is to import the authority certificate to all your devices by going to: `http://your-ddns/root-ca-cert.crt` on each device and accepting the import. If you don't do this, you will get SSL-warnings when accessing pimatic and experience issues with caching (see: [#282](https://github.com/pimatic/pimatic/issues/282)).

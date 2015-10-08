@@ -14,7 +14,7 @@ To daemonize pimatic you can run:
 
 You can also use `status`, `stop`, `restart`.
 
-###Installing globally
+### Installing globally
 
 To make pimatic available globally you can run:
 

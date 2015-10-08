@@ -8,7 +8,7 @@ guideOrder: 1500
 Pimatic features a rich API for external scripting or frontends. The API can be accessed in two
 ways:
 
-  * The REST-API: Using standrard HTTP-Requests.
+  * The REST-API: Using standard HTTP-Requests.
   * The websocket-API: Using websockets and the socket.io protocol.
 
 ## REST-API
