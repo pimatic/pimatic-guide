@@ -6,5 +6,5 @@ guideOrder: 2000
 ---
 
 Welcome to pimatics development guide. 
-This pages will guide you through setting up the development envirement 
+It will guide you through setting up the development environment 
 and how to write a pimatic plugin.

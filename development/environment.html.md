@@ -9,13 +9,13 @@ Develop on a Linux box or a Mac. It makes things easier. You can develop on the 
 slow. If you don't have a Linux or Mac running (how can you?) then I suggest to use VirtualBox and 
 install a Ubuntu.
 
-###Instal Node.js
+### Install Node.js
 
-You need to install Node.js version above __0.10.0__. I recommand installing 
+You need to install Node.js version above __0.10.0__. I recommend installing 
 [Node.js via the package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) of 
 your linux distribution. 
 
-###Setup pimatic for development
+### Setup pimatic for development
 
     mkdir pimatic-dev
     npm install pimatic --prefix pimatic-dev
@@ -35,7 +35,7 @@ You should end up with this in your `pimatic-dev` directory:
 <tr><td>`node_modules/pimatic`</td>			   <td>the pimatic framework files</td></tr>
 </table>
 
-###Debug outputs
+### Debug outputs
 
 You should add these options to the `settings` section of your `config.json` to get debug outputs
 
@@ -44,7 +44,7 @@ You should add these options to the `settings` section of your `config.json` to 
 
 Editor / IDE Setup
 ------------------
-Coffescript is whitespace sensitiv so be sure to use the following editor settings:
+Coffeescript is whitespace sensitive, so make sure to use the following editor settings:
 
 * tab size: 2
 * translate tabs to spaces: true

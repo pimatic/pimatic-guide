@@ -5,7 +5,7 @@ tags: ['guide', page']
 guideOrder: 2060
 ---
 
-###Basics
+### Basics
 
 You can add custom JavaScript/CoffeeScript, HTML/Jade and CSS files to the mobile frontend from your plugin:
 
@@ -14,7 +14,7 @@ You can add custom JavaScript/CoffeeScript, HTML/Jade and CSS files to the mobil
 The HTML/Jade files will get appended to the `body` element of the index page. The JS/CoffeeScript and CSS files 
 will be inserted in the html `head` element.
 
-###Device templates
+### Device templates
 
 You can create your own frontend item templates for your devices. First add a `getTemplate`-function to your device:
 

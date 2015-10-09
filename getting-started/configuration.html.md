@@ -18,7 +18,7 @@ sections:
 The _settings_ section contains the configuration for the HTTP and HTTPS server. You have
 to set the _username_ and _password_ property for the authentication or disable it with setting
 _enabled_ to false.
-In the default config just the HTTP server is enabled and configurated to run on port 80.
+In the default config just the HTTP server is enabled and configured to run on port 80.
 
 See the [config-schema](http://www.pimatic.org/docs/config-schema.html) for more details and
 all configuration options.
