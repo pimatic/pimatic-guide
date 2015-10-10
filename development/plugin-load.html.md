@@ -15,4 +15,4 @@ Just add your plugin to your pimatic `config.json` file like any other plugin.
 pimatic searches for a directory called `pimatic-my-plugin` in its parent `node_modules` directory
 and loads your plugin.
 
-You should see the string "Hello World" in pimatics output.
+You should see the string "Hello World" in pimatic's output.

@@ -5,4 +5,4 @@ tags: ['guide', page']
 guideOrder: 1000
 ---
 
-Welcome to pimatics usage guide.
+Welcome to the usage guide for pimatic.

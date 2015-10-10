@@ -50,7 +50,7 @@ Coffeescript is whitespace sensitive, so make sure to use the following editor s
 * translate tabs to spaces: true
 * max line length: 100
 
-I'm using [sublime text](http://www.sublimetext.com/) as a editor. A example project config would be:
+I'm using [sublime text](http://www.sublimetext.com/) as a editor. An example project config would be:
 
     {
       "folders":
