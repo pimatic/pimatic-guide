@@ -120,3 +120,5 @@ You can also call actions from the socket.io connection:
         console.log(msg.result);
       }
     });
+
+For performance reasons the "production" mode uses minified and pre-compiled code. If you need to debug the mobile frontend code, e.g., as you are developing a mobile frontend extension, set the mode as part of the plugin configuration to "development". Then clear all browser caches and delete all app settings. Best is to use an incognito tab for testing.

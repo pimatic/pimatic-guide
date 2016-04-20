@@ -49,3 +49,6 @@ You should end up with these files in your `pimatic-app` directory:
 <tr><td>`node_modules`</td>				       <td>directory for the framework and plugins</td></tr>
 <tr><td>`node_modules/pimatic`</td>			   <td>the pimatic framework files</td></tr>
 </table>
+
+Now, you need to set the password for the admin user. Open the file `config.json` using a text editor (e.g., `nano`)
+and search for the string `"users"`. Then, change the value of the `password` property for user "admin" below.
