@@ -66,6 +66,11 @@ Your constructor function must assign a name and id to the device (typical from 
 
 <script src="https://gist.github.com/sweetpi/9157350.js?file=device-constructor.coffee"></script>
 
+### Destroy Function
+
+The destroy function is called when the device is deleted or modified. It must unregister event handlers and clear 
+timers typically used for polling updates. Finally, the `super()` function must be called.
+
 #### Predefined devices
 
 If you don't want to define an exotic device try to use a [predefined Device](/docs/lib/devices.html) as base class. 

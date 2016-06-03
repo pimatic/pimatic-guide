@@ -54,7 +54,7 @@ The _rules_ section can contain a list of rules in the form of:
 
     {
       "id": "printerOff",
-      "rule":  "if its 6pm then turn the printer off"
+      "rule":  "when its 6pm then turn the printer off"
     }
 
-where _id_ should be a unique string and rule a string of the form "if ... then ...".
+where _id_ should be a unique string and rule a string of the form "when ... then ...".

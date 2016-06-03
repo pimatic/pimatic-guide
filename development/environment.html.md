@@ -11,9 +11,8 @@ install a Ubuntu.
 
 ### Install Node.js
 
-You need to install Node.js version above __0.10.0__. I recommend installing 
-[Node.js via the package manager](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager) of 
-your linux distribution. 
+You need to install or update to the __LTS__ version of Node.js ([version 4.4.5](https://nodejs.org/en/download/) at 
+the time of writing). Earlier versions of Node.js aren't supported. 
 
 ### Setup pimatic for development
 
