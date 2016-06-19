@@ -37,9 +37,10 @@ Check you Node.js version with:
 
 ## pimatic Installation
 
-You must have the `gcc` compiler or some other suitable compiler installed. On Debian-based systems run:
+You must have the `gcc` compiler or some other suitable compiler installed. Moreover, you need to have `git` installed. 
+On Debian-based systems run:
 
-    sudo apt-get install build-essential
+    sudo apt-get install build-essential git
 
 Once node.js and npm are installed you can run
 
