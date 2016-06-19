@@ -6,7 +6,7 @@ guideOrder: 77
 ---
 You can autostart pimatic by additionally installing the init.d script:
 
-    wget https://raw.github.com/pimatic/pimatic/master/install/pimatic-init-d
+    wget https://raw.githubusercontent.com/pimatic/pimatic/v0.9.x/install/pimatic-init-d
     sudo cp pimatic-init-d /etc/init.d/pimatic
     sudo chmod +x /etc/init.d/pimatic
     sudo chown root:root /etc/init.d/pimatic
