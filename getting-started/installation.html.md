@@ -10,7 +10,7 @@ guideOrder: 10
 First you need to install [node.js](http://nodejs.org) that comes with the package manager
 [npm](https://npmjs.org/).
 
-You need to install or update to the __LTS__ version of Node.js ([version 4.4.5](https://nodejs.org/en/download/) at 
+You need to install or update to the __LTS__ version of Node.js ([version 4.6.2](https://nodejs.org/en/download/) at 
 the time of writing). Earlier versions of Node.js aren't supported. 
 
 If you are on the Raspberry Pi and running the standard Raspbian distribution you can use the following installation 
@@ -18,15 +18,15 @@ procedure.
 
 __Pi Model A, B, B+ or Zero__
 
-    wget https://nodejs.org/dist/v4.4.5/node-v4.4.5-linux-armv6l.tar.gz -P /tmp
+    wget https://nodejs.org/dist/v4.6.2/node-v4.6.2-linux-armv6l.tar.gz -P /tmp
     cd /usr/local
-    sudo tar xzvf /tmp/node-v4.4.5-linux-armv6l.tar.gz --strip=1
+    sudo tar xzvf /tmp/node-v4.6.2-linux-armv6l.tar.gz --strip=1
     
 __Pi 2 Mode B or Pi 3 Model B__
 
-    wget https://nodejs.org/dist/v4.4.5/node-v4.4.5-linux-armv7l.tar.gz -P /tmp
+    wget https://nodejs.org/dist/v4.6.2/node-v4.6.2-linux-armv7l.tar.gz -P /tmp
     cd /usr/local
-    sudo tar xzvf /tmp/node-v4.4.5-linux-armv7l.tar.gz --strip=1
+    sudo tar xzvf /tmp/node-v4.6.2-linux-armv7l.tar.gz --strip=1
         
 To install node on another platform than Raspberry Pi have a look at 
 [installing Node.js via package manager](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions).
