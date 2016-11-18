@@ -10,7 +10,7 @@ guideOrder: 10
 First you need to install [node.js](http://nodejs.org) that comes with the package manager
 [npm](https://npmjs.org/).
 
-You need to install or update to the __LTS__ version of Node.js ([version 4.6.2](https://nodejs.org/en/download/) at 
+You need to install or update to version __4__ of Node.js ([version 4.6.2](https://nodejs.org/en/download/) at 
 the time of writing). Earlier versions of Node.js aren't supported. 
 
 If you are on the Raspberry Pi and running the standard Raspbian distribution you can use the following installation 
